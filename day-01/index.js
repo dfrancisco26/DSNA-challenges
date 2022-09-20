@@ -33,4 +33,19 @@ function anagrams(wOne, wTwo) {
   return first.map(letter => second.includes(letter)).includes(false) ? false : true;
 }
 
-module.exports = { reverseSentence, titleCaseWords, oddishEvenish, at, anagrams };
+function fizzBuzz(number) {
+  const arr = [];
+  for (let i = 1; i <= number; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      arr.push ('fizzbuzz');
+    } else if (i % 3 === 0) {
+      arr.push('fizz');
+    } else if (i % 5 === 0) {
+      arr.push('buzz');
+    } else arr.push(i);
+  }
+  return arr;
+}
+
+
+module.exports = { reverseSentence, titleCaseWords, oddishEvenish, at, anagrams, fizzBuzz };
