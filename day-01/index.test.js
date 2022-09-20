@@ -1,4 +1,4 @@
-const { reverseSentence,  titleCaseWords, oddishEvenish, at } = require('./index');
+const { reverseSentence,  titleCaseWords, oddishEvenish, at, anagrams } = require('./index');
 
 describe('primitive code challenges', () => {
   it('should reverse a sentence', () => {
@@ -14,5 +14,9 @@ describe('primitive code challenges', () => {
   it('should take an array and index and return item located there', () => { 
     expect(at(['a', 'bravo', 'charlie', 'delta', 'e'], 2)).toEqual('charlie');
     expect(at(['a', 'bravo', 'charlie', 'delta', 'e'], -2)).toEqual('delta');
+  });
+  it('should determine if two words are anagrams of one another', () => {
+    expect(anagrams('superintended', 'upredestined')).toBe(true);
+    expect(anagrams('pictorialness', 'document')).toBe(false);
   });
 });

@@ -26,4 +26,11 @@ function at(arr, i) {
   return i >= 0 ? arr[i] : arr[arr.length + i];
 }
 
-module.exports = { reverseSentence, titleCaseWords, oddishEvenish, at };
+function anagrams(wOne, wTwo) {
+  const first = wOne.split('');
+  const second = wTwo.split('');
+
+  return first.map(letter => second.includes(letter)).includes(false) ? false : true;
+}
+
+module.exports = { reverseSentence, titleCaseWords, oddishEvenish, at, anagrams };
