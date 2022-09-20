@@ -47,5 +47,10 @@ function fizzBuzz(number) {
   return arr;
 }
 
+function addPunctuation(string) {
+  return function punctuate(quote) {
+    return (`${quote}${string}`);
+  };
+}
 
-module.exports = { reverseSentence, titleCaseWords, oddishEvenish, at, anagrams, fizzBuzz };
+module.exports = { reverseSentence, titleCaseWords, oddishEvenish, at, anagrams, fizzBuzz, addPunctuation };

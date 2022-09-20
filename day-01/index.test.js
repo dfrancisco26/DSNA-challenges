@@ -1,4 +1,4 @@
-const { reverseSentence,  titleCaseWords, oddishEvenish, at, anagrams, fizzBuzz } = require('./index');
+const { reverseSentence,  titleCaseWords, oddishEvenish, at, anagrams, fizzBuzz, addPunctuation } = require('./index');
 
 describe('primitive code challenges', () => {
   it('should reverse a sentence', () => {
@@ -22,5 +22,15 @@ describe('primitive code challenges', () => {
   it('should return array that has numbers from 1 to n, with fizz for multiples of three and buzz for multiples of five, and fizzbuzz for multiples of both', () => {
     const arr = [1, 2, 'fizz', 4, 'buzz', 'fizz', 7, 8, 'fizz', 'buzz', 11, 'fizz', 13, 14, 'fizzbuzz'];
     expect(fizzBuzz(15)).toEqual(arr);
+  });
+  it('adds punctuation to the end of sentences', () => {
+    const shout = addPunctuation('!');
+
+    const huh = addPunctuation('?');
+
+    const holler = shout('SAY IT');
+    expect(holler).toEqual('SAY IT!');
+    expect(huh('Talkin to me')).toEqual('Talkin to me?');
+
   });
 });
