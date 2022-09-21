@@ -53,4 +53,13 @@ function addPunctuation(string) {
   };
 }
 
-module.exports = { reverseSentence, titleCaseWords, oddishEvenish, at, anagrams, fizzBuzz, addPunctuation };
+function multiples(number) {
+  const arr = [];
+  if (number >= 50) return arr;
+  for (let i = 1; i <= 50; i++) {
+    if (i % number === 0) arr.push(i);
+  }
+  return arr;
+}
+
+module.exports = { multiples, reverseSentence, titleCaseWords, oddishEvenish, at, anagrams, fizzBuzz, addPunctuation };
