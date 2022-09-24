@@ -40,4 +40,3 @@ B.add(C);
 ## Note
 
 FYI: the shape of a Binary Tree is dependant on order of construction.
-

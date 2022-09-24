@@ -1,4 +1,6 @@
-Anagrams
+
+# Anagrams
+
 ---
 
 A hard problem made easy with the right use of built-ins
@@ -15,7 +17,7 @@ function anagrams(wordOne, wordTwo) {
 
 ## Test Cases
 
-Input | Output 
+Input | Output
 ---|---:
 `'superintended'`, `'unpredestined'` | `true` 
 `'pictorialness'`, `'documentarily'` | `false` 
